@@ -1,0 +1,564 @@
+
+@media only screen and (max-width: 1366px){
+    .form-section .button-sec .title {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .home-banner h1 {
+        font-size: 84px;
+    }
+    .home-banner-left h2 {
+        font-size: 44px;
+    }
+    .home-banner .button-sec .title {
+        font-size: 24px;
+    }
+    .mail-sec {
+        font-size: 17px;
+    }
+    .think-cons h2 {
+        font-size: 65px;
+    }
+    .think-cons p {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .think-cons ul li {
+        font-size: 21px;
+    }
+    .bg-consult {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .bg-consult h2 {
+        font-size: 60px;
+    }
+    .bg-consult p {
+        padding-top: 30px;
+        font-size: 21px;
+    }
+    .consult-exp ul li {
+        font-size: 19px;
+    }
+    .business-consult h2 {
+        font-size: 66px;
+        line-height: 61px;
+    }
+    .business-consult p {
+        margin-top: 15px;
+        font-size: 19px;
+    }
+    .grow-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+    .grow-section h3 {
+        padding-top: 20px;
+    }
+    .achievers h2 {
+        font-size: 72px;
+    }
+    .achievers-space ul li{
+        padding-bottom: 30px;
+    }
+    .faq p {
+        font-size: 19px;
+    }
+    .ready {
+        padding: 100px 0 100px 0;
+    }
+    .ready h2 {
+        font-size: 65px;
+    }
+    .ready h3 {
+        line-height: 40px;
+    }
+    .top-banner h1 {
+        font-size: 62px;
+    }
+    .form-section .button-sec .title {
+        font-size: 19px;
+    }
+    .again-price h3 {
+        font-size: 45px;
+    }
+    .again-section .button-sec .title {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .home-banner .button-sec .title {
+        font-size: 23px;
+    }
+    .think-cons h2 {
+        text-align: center;
+        font-size: 53px;
+    }
+    .business-consult h2 {
+        font-size: 62px;
+    }
+    .achievers{
+        padding:65px 0 28px 0 ;
+    }
+    .achievers h2 {
+        font-size: 71px;
+    }
+    .top-banner h1 {
+        font-size: 60px;
+    }
+    .pop-up h2 {
+        font-size: 25px;
+    }
+    .model-content {
+        font-size: 18px;
+    }
+    .modal.show .modal-dialog {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header {
+        text-align: center;
+    }
+    .mail-sec ul li {
+        margin-top: 4px;
+        font-size: 16px;
+    }
+    .home-banner h1 {
+        font-size: 66px;
+    }
+    .home-banner-left h2 {
+        font-size: 29px;
+    }
+    .home-banner-left h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .home-banner .button-sec .title {
+        font-size: 22px;
+    }
+    .arrow ::before, .arrow ::after {
+        display: none;
+    }
+    .bg-consult h2 {
+        font-size: 47px;
+        line-height: 53px;
+    }
+    .grow-section .button-sec .title {
+        font-size: 22px;
+    }
+    .business-consult h2 {
+        text-align: center;
+    }
+    .grow-section h2 {
+        font-size: 61px;
+        line-height: 64px;
+    }
+    .bg-consult .button-sec .title {
+        font-size: 22px;
+    }
+    .achievers h2 {
+        font-size: 52px;
+    }
+    .q-heading h2 {
+        font-size: 35px;
+    }
+    .ready h2 {
+        font-size: 63px;
+    }
+    .ready .button-sec .title {
+        font-size: 22px;
+    }
+    .again-section .button-sec .title {
+        font-size: 22px;
+    }
+    .top-banner{
+        padding: 90px 0 90px 0; 
+    }
+    .top-banner h1 {
+        font-size: 46px;
+    }
+    .receive-section h2 {
+        padding-top: 10px;
+        font-size: 37px;
+    }
+   
+    .form-section .button-sec .title {
+        font-size: 13px;
+        line-height: 1.1;
+    }
+    .form-section .button-sec .subtitle {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    .receive-section p {
+        margin-top: 5px;
+        margin-bottom: 22px;
+    }
+    .again-price h2 {
+        font-size: 54px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mail-sec ul li{
+        margin-top: 8px;
+    }
+    .home-banner{
+        margin-top: 75px;
+        padding-top: 0;
+    }
+    .mail-sec{
+        text-align: center;
+        padding: 0;
+    }
+    .button-sec a, button {
+        line-height: 20px;
+    }
+    .home-banner h1{
+        font-size: 32px;
+    }
+    .header {
+        text-align: center;
+    }
+    .home-banner-left h2{
+        margin-top:0px;
+    }
+    .home-banner-left h3{
+        font-size:24px;
+        font-weight: 600;
+    }
+    .home-banner-right {
+        text-align: center;
+    }
+    .home-banner-right img {
+        display: none;
+    }
+    .home-banner-left h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .home-banner-left .button-sec{
+            margin-top: 20px;
+    }
+    .home-banner-left .button-sec {
+        padding-top: 18px;
+    }
+    .home-banner .button-sec .title {
+        font-size: 21px;
+    }
+    .think-cons h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .think-cons img {
+        padding-top: 20px;
+    }
+    .think-cons ul li {
+        font-size: 16px;
+        background-position: 5px 11px;
+    }
+    .bg-consult h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .bg-consult p {
+        font-size: 20px;
+    }
+    .bg-consult .button-sec .title {
+        font-size: 21px;
+    }
+    .consult-exp ul li {
+        font-size: 18px;
+    }
+    .button-sec .title {
+        font-size: 24px;
+    }
+    .business-consult h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .business-consult p {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .grow-section h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .grow-section .button-sec .title {
+        font-size: 21px;
+    }
+    .grow-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .grow-section h3 {
+        font-size: 23px;
+    }
+    .button-sec .title {
+        font-size: 23px;
+    }
+    .achievers h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .achievers h4 {
+        font-size: 23px;
+    }
+    .achievers h3 {
+        font-size: 20px;
+    }
+    .achievers h2{
+    }
+    .achievers p {
+        font-size: 16px;
+    }
+    .achievers-space ul li{
+        padding-bottom: 28px;
+    }
+    .faq p {
+        font-size: 16px;
+    }
+    .faq b {
+        font-size: 18px;
+        padding-left: 2px;
+    }
+    .faq img{
+        width: 7%;
+    }
+    .question-section {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .q-heading {
+        background-size: cover;
+        padding: 15px;
+    }
+    .q-heading h2 {
+        font-size: 21px;
+    }
+    .ready h2 {
+        font-size: 35px;
+    }
+    .ready h3 {
+        line-height: 23px;
+        font-size: 22px;
+    }
+    .ready{
+        padding: 60px 0 60px 0;
+    }
+    .ready .button-sec .title {
+        font-size: 21px;
+    }
+    .button-sec .title {
+        font-size: 21px;
+    }
+    .footer-logo {
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer img {
+        max-width: 170px;
+    }
+    .top-banner {
+        margin-top: 73px;
+        padding: 60px 0 60px 0;
+    }
+    .top-banner h1 {
+        font-size: 29px;
+    }
+    .top-banner h3 {
+        font-size: 27px;
+    }
+    input, select {
+        height: 50px;
+        padding-top: 14px;
+    }
+    .form-section .button-sec .title {
+        font-size: 14px;
+    }
+    .form-section{
+        padding: 0 22px 60px 22px;
+    }
+    .stack-item ul{
+        padding-bottom: 10px;
+    }
+    /* testing */
+    .again-section{
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+    .again-price h3 {
+        font-size: 35px;
+    }
+    .again-price h2 {
+        font-size: 38px;
+    }
+    .button-sec .title {
+        font-size: 21px;
+    }
+    .again-section .button-sec .title {
+        font-size: 17px;
+    }
+    .again-section .button-sec .subtitle {
+        font-size: 14px;
+    }
+    .button-sec .subtitle {
+        font-size: 16px;
+    }
+    .thank-you{
+        padding: 50px 0 50px 0;
+    }
+    .thanks p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .list-description {
+        font-size: 20px;
+        padding-top: 26px;
+        padding-bottom: 0;
+    }
+    .steps {
+        padding: 18px 0 10px 0;
+    }
+    .steps p{
+        font-size: 18px;
+    }
+    .steps h3{
+        font-size: 18px;
+    }
+    .thank-you ul li {
+        list-style: inside;
+        font-size: 18px;
+    }
+    .list-description p {
+        padding: 0;
+    }
+    .pop-up h2 {
+        font-size: 24px;
+    }
+    .pop-up h3 {
+        font-size: 15px;
+    }
+    .pop-up .button-sec .title {
+        font-size: 15px;
+    }
+    .model-content {
+        font-size: 15px;
+    }
+    .pop-up .button-sec button {
+        font-size: 14px;
+    }
+    .pop-up .button-sec button .subtitle {
+        font-size: 12px;
+    }
+    .pop-up input, select {
+        height: 40px;
+    }
+    .model-content-footer {
+        font-size: 12px;
+    }
+    .top-banner h1 {
+        font-size: 30px;
+    }
+    .thanks p {
+        padding-top: 10px;
+        /* font-size: 14px; */
+    }
+    .top-banner h3 {
+        font-size: 23px;
+    }
+    .form-section .button-sec .title {
+        font-size: 15px;
+    }
+    .form-section .button-sec .subtitle {
+        font-size: 12px;
+    }
+    .receive-section h2 {
+        padding-top: 40px;
+        font-size: 32px;
+    }
+    .receive-section p {
+        font-size: 18px;
+    }
+    .again-section .receive-section h2 {
+        font-size: 32px;
+    }
+    .again-achievers .achievers h3 {
+        font-size: 16px;
+    }
+    .achievers p {
+        font-size: 14px;
+    }
+    .achievers {
+        padding: 50px 0 25px 0;
+    }
+    .q-heading {
+        background: url(../images/ask-bg-mob.png);
+        background-position:center ;
+        background-repeat: no-repeat;
+    }
+    .sectionPadding-error{
+        margin-top:70px;
+    }
+    .privacypolicyterms{
+        padding: 30px 0;
+    }
+    .footer{
+        padding-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .consult-exp .heading-color{
+        display: inline-block;
+        padding-bottom: 8px
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .home-banner h1{
+        font-size: 28px;
+    }
+    .form-section .button-sec .title {
+        font-size: 14px;
+    }
+    .form-section .button-sec .subtitle{
+        font-size: 11px;
+    }
+    .form-section  .button-sec a, button{
+        padding:15px 8px 11px 8px;
+    }
+    .alert{
+        font-size: 16px;
+    }
+    .form-section button {
+        line-height: 15px;
+        font-size: 18px;
+    }
+    .steps {
+        padding: 16px 0 10px 0;
+    }
+    .steps p{
+        font-size: 16px;
+    }
+    .steps h3{
+        font-size: 16px;
+    }
+    .thank-you ul li {
+        list-style: inside;
+        font-size: 16px;
+    }
+    .consult-exp .heading-color{
+        display: inline-block;
+        padding-bottom: 8px
+    }
+    .footer{
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,1918 @@
+/*--------------------------------------------------------------
+    Theme Name: EBook Courses Template
+    Theme URL: https://www.ogwebsolutions.com/
+    Author: OG Websolutions Pvt. Ltd.
+    Version:  1.1
+--------------------------------------------------------------*/
+
+
+/**
+@File: EBook Courses Theme Styles
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+# General Style
+    ## Google Font
+    ## Back to top button
+    ## Typography
+# Header
+# Footer
+# Home Page
+	## Banner Section
+	## Courses In The Book
+    ## Testimonial Section
+    ## CTA Section
+    ## FAQ Section
+    ## Modal/Popup Style
+# Upsell/Downsell Page
+# Order Page
+# Order confirmation(Thank you)/Order Cancelled Page
+# Privacy Policy &and Term & Conditions page
+
+**/
+
+
+/*--------------------------------------------------------------
+    # General
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Google Font
+----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+
+/* ----------------------------------
+    ## Back to top button
+----------------------------------*/
+
+.backtotop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #ff6500;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: opacity 200ms linear;
+    display: none;
+}
+
+.backtotop::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -4px;
+    transform: rotate(-45deg);
+    height: 0px;
+    width: 0px;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    padding: 5px;
+    border-color: #ffffff;
+}
+
+.backtotop:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+
+/* ----------------------------------
+    ## Typography
+----------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #3c3c3c;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #3c3c3c;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #3c3c3c;
+}
+
+label {
+    font-weight: normal;
+}
+
+label.error {
+    color: #f00;
+    padding-left: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.form-control {
+    height: auto;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #aaaaaa;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+}
+
+.form-control.error {
+    border-color: #f00;
+}
+
+.form-select {
+    background-image: url(../icons/carrot-icon.png);
+    background-size: 10px 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+
+/*------ Font Family ------*/
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*------ Font Weight ------*/
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+
+/*------ Custom Text Color ------*/
+
+.text-yellow {
+    color: #ffe300;
+}
+
+.text-orange {
+    color: #ff6500;
+}
+
+
+/*------ Custom Background Color ------*/
+
+.bg-color-white {
+    background-color: #fff;
+}
+
+.bg-color-gray {
+    background-color: #FBFBFB;
+}
+
+.bg-color-pink {
+    background-color: #FFEDF1;
+}
+
+.bg-color-maroon {
+    background-color: rgb(59, 21, 30);
+}
+
+
+/*------ Border Color ------*/
+
+.border-white {
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+.border-orange {
+    border-color: #ff6500;
+    border-style: solid;
+}
+
+
+/*------ Box Shadow ------*/
+
+.box-shadow {
+    -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+
+/*------ Button Style ------*/
+
+.btn {
+    color: #ffffff !important;
+    background-color: #ff6500 !important;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 60px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn:focus {
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .btn {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .btn {
+        font-size: 15px;
+    }
+}
+
+
+/*------ Custom Container ------*/
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/*------ Section Spacer ------*/
+
+.sectionPadding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .sectionPadding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .sectionPadding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .sectionPadding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*------ Section Title ------*/
+
+.section-title {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    font-size: 60px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+.section-title h3 {
+    font-size: 28px;
+}
+
+.section-title p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .section-title h2 {
+        font-size: 50px;
+    }
+    .section-title h3 {
+        font-size: 26px;
+    }
+    .section-title p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .section-title h2 {
+        font-size: 40px;
+    }
+    .section-title h2 br {
+        display: none;
+    }
+    .section-title h3 {
+        font-size: 24px;
+    }
+    .section-title p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .section-title h2 {
+        font-size: 35px;
+    }
+    .section-title h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    width: 190px;
+}
+
+@media only screen and (max-width: 767px) {
+    header .logo {
+        width: 175px;
+    }
+    header .headerLeft {
+        text-align: center;
+    }
+    header .headerRight {
+        padding-top: 15px;
+        text-align: center;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(255, 237, 241);
+    color: rgb(255, 255, 255);
+    border-top: 5px solid rgb(203, 44, 80);
+}
+
+footer .logo {
+    max-width: 190px;
+}
+
+footer .list-inline-item {
+    line-height: 1;
+}
+
+footer .list-inline-item a {
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+footer .list-inline-item a:hover {
+    text-decoration: underline;
+}
+
+footer .list-inline-item:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, .5);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 30px 0 30px;
+    }
+    footer .list-inline-item a {
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Banner Section
+----------------------------------*/
+
+.pageContentWrapper {
+    margin-top: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+    .pageContentWrapper {
+        margin-top: 110px;
+    }
+}
+
+.bannerSection {
+    background: url(../images/heroBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*---- Left Section ----*/
+
+.bannerSection h1 {
+    font-size: 60px;
+}
+
+.bannerSection .left-col h2 {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.bannerSection .left-col img {
+    width: 175px;
+}
+
+.bannerSection .left-col ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bannerSection .left-col li {
+    font-size: 18px;
+    background-image: url(../icons/arrow-right.html);
+    background-image: url(../icons/check-circle-regular.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.bannerSection .left-col li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .bannerSection h1 {
+        font-size: 55px;
+    }
+    .bannerSection .left-col h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .bannerSection h1 {
+        font-size: 50px;
+    }
+    .bannerSection .left-col h2 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .bannerSection h1 {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+    .bannerSection .left-col h2 {
+        font-size: 24px;
+    }
+    .bannerSection .left-col li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .bannerSection h1 {
+        font-size: 38px;
+    }
+    .bannerSection .left-col h2 {
+        font-size: 22px;
+    }
+    .bannerSection .left-col img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .bannerSection h1 {
+        font-size: 30px;
+    }
+    .bannerSection .left-col h2 {
+        font-size: 20px;
+    }
+    .bannerSection .left-col li {
+        font-size: 14px;
+    }
+}
+
+
+/*---- Right Section ----*/
+
+.bannerSection .right-col figure img {
+    margin-bottom: -130px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .bannerSection .right-col figure {
+        text-align: center;
+    }
+    .bannerSection .right-col figure img {
+        margin-bottom: -80px;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .bannerSection .right-col figure img {
+        margin-bottom: -65px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Courses In the Book Section
+----------------------------------*/
+
+
+/*---- Left Section ----*/
+
+.coursesSection .left-col p {
+    font-size: 16px;
+    color: rgb(84, 89, 95);
+    line-height: 1.5;
+}
+
+.coursesSection .left-col .testmoniBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coursesSection .left-col .testmoniBlock .headshot img {
+    height: 77px;
+    width: 77px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.coursesSection .left-col .testmoniBlock .author h3 {
+    font-size: 18px;
+}
+
+.coursesSection .left-col {
+    background: url(../icons/quote.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 400px 350px;
+}
+
+
+/*---- Right Section ----*/
+
+.coursesSection .right-col .logosWrapper img {
+    opacity: 0.5;
+}
+
+.coursesSection .right-col .logosWrapper {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.coursesSection .right-col .logosWrapper li {
+    width: 33.33%;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .coursesSection .right-col .logosWrapper li {
+        width: 100%;
+    }
+    .coursesSection .right-col .logosWrapper {
+        flex-direction: column;
+    }
+    .coursesSection .right-col .logosWrapper img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Courses In The Book Section
+----------------------------------*/
+
+
+/*---- Course Heading ----*/
+
+.coursesSection h2.heading {
+    margin-top: 50px;
+    padding-top: 95px;
+    padding-bottom: 60px;
+    border-top: 1px solid rgba(59, 85, 28, 0.14);
+    font-size: 40px;
+}
+
+
+/*---- Course Item ----*/
+
+.coursesSection .courseItem {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.coursesSection .courseItem h3 {
+    font-size: 16px;
+    color: #000;
+}
+
+.coursesSection .courseItem p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .coursesSection h2.heading {
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .coursesSection h2.heading {
+        margin-top: 30px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .coursesSection h2.heading {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .coursesSection h2.heading {
+        font-size: 32px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Testimonial Section
+----------------------------------*/
+
+
+/*---- Blue CTA ----*/
+
+.testimonialSection .ctaBlockWrap {
+    background: #100920;
+    padding: 50px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -170px;
+}
+
+section.coursesSection.sectionPadding {
+    padding-bottom: 170px;
+}
+
+.testimonialSection .ctaBlockWrap .right-col {
+    max-width: 330px;
+    width: 100%;
+    text-align: right;
+}
+
+.testimonialSection .ctaBlockWrap h2.heading {
+    font-size: 32px;
+}
+
+.testimonialSection .ctaBlockWrap p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 1199.98px) {}
+
+@media only screen and (max-width: 991.98px) {
+    .testimonialSection .ctaBlockWrap h2.heading {
+        font-size: 30px;
+    }
+    .testimonialSection .ctaBlockWrap .right-col {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .testimonialSection .ctaBlockWrap {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .testimonialSection .ctaBlockWrap h2.heading {
+        font-size: 28px;
+    }
+    .testimonialSection .ctaBlockWrap {
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .testimonialSection .ctaBlockWrap h2.heading {
+        font-size: 26px;
+    }
+    .testimonialSection .ctaBlockWrap {
+        padding: 30px 15px;
+    }
+}
+
+
+/*---- Testimonail Section----*/
+
+.testimonialSection .testimonailWrapper h3 {
+    font-size: 20px;
+}
+
+.testimonialSection .testimonailWrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.testimonialSection .testimonailWrapper img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.testimonialSection .testimonailWrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../icons/quote-2.png);
+    background-repeat: no-repeat;
+    background-position: top 75px center;
+    background-size: 195px 145px;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .testimonialSection .testimonailWrapper {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .testimonialSection .testimonailWrapper {
+        margin-top: 50px;
+    }
+    .testimonialSection .testimonailWrapper p {
+        font-size: 16px;
+    }
+    .testimonialSection .testimonailWrapper h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* ----------------------------------
+    ## About Author Section
+----------------------------------*/
+
+.aboutAuthorSec .left-col img {
+    margin-bottom: -80px;
+}
+
+.aboutAuthorSec .right-col h2 span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.aboutAuthorSec .right-col h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #cb2c50;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.aboutAuthorSec .right-col p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(84, 89, 95);
+}
+
+.aboutAuthorSec .right-col p.qoute {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(84, 89, 95);
+}
+
+@media only screen and (max-width: 991.98px) {
+    .aboutAuthorSec .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .aboutAuthorSec .left-col,
+    .aboutAuthorSec .right-col {
+        text-align: center;
+    }
+    .aboutAuthorSec .right-col h2 span {
+        font-size: 18px;
+    }
+    .aboutAuthorSec .right-col h2 {
+        font-size: 34px;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+    .aboutAuthorSec .right-col p.qoute {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .aboutAuthorSec .right-col p.qoute {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {}
+
+
+/* ----------------------------------
+    ## CTA Section
+----------------------------------*/
+
+.ctaSection {
+    background: url(../images/ctaBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 480px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ctaSection img {
+    width: 175px;
+}
+
+.ctaSection h2 {
+    font-size: 55px;
+}
+
+.ctaSection h3 {
+    font-size: 40px;
+}
+
+.ctaSection p {
+    color: rgba(255, 255, 255, 0.74);
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ctaSection h2 {
+        font-size: 50px;
+    }
+    .ctaSection h3 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ctaSection h2 {
+        font-size: 42px;
+    }
+    .ctaSection h3 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ctaSection h2 {
+        font-size: 36px;
+    }
+    .ctaSection h3 {
+        font-size: 24px;
+    }
+    .ctaSection p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ctaSection h2 {
+        font-size: 30px;
+    }
+    .ctaSection h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* ----------------------------------
+    ## FAQ Section
+----------------------------------*/
+
+.accordion .accordion-section {
+    border-top: 1px solid #cb2c50;
+    margin-bottom: 20px;
+}
+
+.accordion .accordion-section:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.accordion .accordion-section-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 20px 40px 20px 20px;
+    border: 1px solid #cb2c50;
+    display: block;
+    position: relative;
+    transition: ease 0.3s all;
+}
+
+.accordion .accordion-section-title.active {
+    color: #cb2c50;
+    border: 1px solid #cb2c50;
+    background-color: #ffffff;
+}
+
+.accordion .accordion-section-title:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+    content: '';
+    height: 0;
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #3c3c3c;
+}
+
+.accordion .accordion-section-title.active:after {
+    border-top: 0;
+    border-bottom: 7px solid #cb2c50;
+}
+
+.accordion-section-content {
+    display: none;
+    border: 1px solid #cb2c50;
+    padding: 20px;
+}
+
+.accordion-section-content p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 991.99px) {
+    .accordion .accordion-section-title {
+        font-size: 18px;
+    }
+    .accordion-section-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .accordion .accordion-section-title {
+        font-size: 16px;
+    }
+    .accordion-section-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Modal/Popup Style
+----------------------------------*/
+
+.modal-body {
+    padding: 50px 30px 50px;
+}
+
+.modal-content {
+    background-color: rgb(16, 9, 32);
+    border-color: rgb(203, 44, 80);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.modal .btn-close {
+    position: absolute;
+    z-index: 1155;
+    top: -20px;
+    right: -20px;
+    background: transparent url(../icons/modalCloseIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    opacity: 1;
+}
+
+.modal .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal-body h2 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.modal-body #full_name {
+    background-image: url(../icons/user-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 97%;
+    padding-right: 40px;
+}
+
+.modal-body #email {
+    background-image: url(../icons/mail-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 97%;
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+    .modal-body h2 {
+        font-size: 22px;
+    }
+    .form-control {
+        font-size: 13px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Upsell/Downsell Page
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Banner Section
+----------------------------------*/
+
+.innerBanner .bannerWrapper h1 {
+    font-size: 34px;
+}
+
+.innerBanner .bannerWrapper h2 {
+    font-size: 26px;
+}
+
+.bannerSection.innerBanner {
+    padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .innerBanner .bannerWrapper h1 {
+        font-size: 32px;
+    }
+    .innerBanner .bannerWrapper h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .innerBanner .bannerWrapper h1 {
+        font-size: 30px;
+    }
+    .innerBanner .bannerWrapper h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .innerBanner .bannerWrapper h1 {
+        font-size: 28px;
+    }
+    .innerBanner .bannerWrapper h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Offer Section
+----------------------------------*/
+
+.offerSection .offerWrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 50px 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+}
+
+.offerSection .offerWrapper .left-col {
+    margin-right: 50px;
+    flex-shrink: 0;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.offerSection .offerWrapper .right-col p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.offerSection .offerWrapper .right-col h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.offerSection .offerWrapper .right-col h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.offerSection .offerWrapper .right-col p a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.offerSection .offerWrapper .right-col p a:hover {
+    color: #ff6500;
+    opacity: 0.8;
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .offerSection .offerWrapper {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .offerSection .offerWrapper {
+        flex-direction: column;
+        padding: 40px 40px;
+    }
+    .offerSection .offerWrapper .left-col {
+        margin: 0 auto;
+    }
+    .offerSection .offerWrapper .right-col {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .offerSection .offerWrapper .right-col p {
+        font-size: 18px;
+    }
+    .offerSection .offerWrapper .right-col h2 {
+        font-size: 28px;
+    }
+    .offerSection .offerWrapper .right-col h3 {
+        font-size: 19px;
+    }
+    .offerSection .offerWrapper .right-col p a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .offerSection .offerWrapper {
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+    .offerSection .offerWrapper .right-col p {
+        font-size: 16px;
+    }
+    .offerSection .offerWrapper .right-col h2 {
+        font-size: 24px;
+    }
+    .offerSection .offerWrapper .right-col h3 {
+        font-size: 18px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Order Page
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Banner section
+----------------------------------*/
+
+.orderBabnner .orderBannerBox {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 40px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.orderBabnner .orderBannerBox .right-col h2 {
+    font-size: 24px;
+}
+
+.orderBabnner .orderBannerBox .right-col p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.73);
+}
+
+.orderBabnner .orderBannerBox .left-col {
+    flex-shrink: 0;
+    width: 240px;
+    margin-right: 30px;
+}
+
+.orderBabnner .orderBannerBox .left-col figure {
+    position: relative;
+}
+
+.orderBabnner .orderBannerBox .left-col figure img {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -120px;
+    margin-bottom: -140px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .orderBabnner .orderBannerBox {
+        flex-direction: column;
+        text-align: center;
+    }
+    .orderBabnner .orderBannerBox .left-col {
+        margin: 0 auto 20px;
+    }
+    .orderBabnner .orderBannerBox .left-col figure img {
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+
+/* ----------------------------------
+    ## Testimoni Section
+----------------------------------*/
+
+.testimoniSection .testimoniWrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: -200px;
+    background-image: url(../icons/quote2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 195px;
+}
+
+.testimoniSection .testimoniWrapper .left-col,
+.testimoniSection .testimoniWrapper .right-col {
+    padding: 40px;
+}
+
+.testimoniSection .testimoniWrapper .review {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimoniSection .testimoniWrapper .headshot img{
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimoniSection .testimoniWrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.testimoniSection .testimoniWrapper h3 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width:767.98px) {
+    .testimoniSection .testimoniWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimoniSection .testimoniWrapper .left-col,
+    .testimoniSection .testimoniWrapper .right-col {
+        padding: 30px 20px;
+        max-width: 420px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimoniSection .testimoniWrapper p {
+        font-size: 15px;
+    }
+}
+
+
+/* ----------------------------------
+## Order Section
+----------------------------------*/
+
+.formcontentSec {
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+.formcontentSec .form-status {
+    margin-top: 40px;
+    display: none;
+}
+
+.your_productlist {
+    background: rgba(203, 44, 80, 0.05);
+    padding: 15px;
+    float: left;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+}
+
+.order_Section .left-col .your_productlist ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.order_Section .left-col .your_productlist li {
+    background: none;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #757575;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.order_Section .left-col .your_productlist li:not(:last-child) {
+    border-bottom: 1px solid #b0d2de;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+}
+
+.order_Section .left-col .your_productlist li:first-child,
+.order_Section .left-col .your_productlist li:last-child {
+    color: #000;
+    font-size: 15px;
+}
+
+.order_Section .left-col .your_productlist li:last-child {
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.order_Section .left-col .your_productlist li .pull-left {
+    float: left;
+}
+
+.order_Section .left-col .your_productlist li .pull-right {
+    float: right;
+}
+
+.order_Section h2.headingsec {
+    color: #3c3c3c;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 2px dotted #c7c7c7;
+    padding: 0 0 20px;
+    margin: 0 0 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.order_Section .btn-outer {
+    text-align: center;
+}
+
+.declaration p {
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: center;
+    max-width: 345px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order_Section .cards {
+    text-align: center;
+}
+
+.order_Section .cards img {
+    display: inline-block;
+}
+
+.order_Section .pay-btn.btn {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .order_Section .pay-btn.btn {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .formcontentSec {
+        padding: 15px;
+    }
+    .order_Section h2.headingsec {
+        font-size: 18px;
+    }
+    .order_Section .left-col .your_productlist li {
+        font-size: 12px;
+    }
+    .order_Section .left-col .your_productlist li:first-child,
+    .order_Section .left-col .your_productlist li:last-child {
+        font-size: 14px;
+    }
+    .declaration p {
+        font-size: 13px;
+    }
+    .order_Section .pay-btn.btn {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .order_Section .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Guarantee Section
+----------------------------------*/
+
+.guaranteeSection .guaranteeWrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 40px 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.guaranteeSection .guaranteeWrapper .left-col {
+    margin-right: 60px;
+    flex-shrink: 0;
+    max-width: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.guaranteeSection .guaranteeWrapper .right-col h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.guaranteeSection .guaranteeWrapper .right-col p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .guaranteeSection .guaranteeWrapper {
+        padding: 30px 30px;
+    }
+    .guaranteeSection .guaranteeWrapper .left-col {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width:767.98px) {
+    .guaranteeSection .guaranteeWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .guaranteeSection .guaranteeWrapper .left-col {
+        margin: 0 auto;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Order confirmation(Thank you)/Order Cancelled Page
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Thank You Banner Section
+----------------------------------*/
+
+.thanksBanner .thanksWrapper img {
+    width: 50px;
+}
+
+.thanksBanner .thanksWrapper h1 {
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.thanksBanner .thanksWrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: .75;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .thanksBanner .thanksWrapper h1 {
+        font-size: 36px;
+    }
+    .thanksBanner .thanksWrapper p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .thanksBanner .thanksWrapper h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Bellow Banner Section
+----------------------------------*/
+
+.bellowThanksBanner {
+    padding: 40px 0;
+}
+
+.bellowThanksBanner .itemWrap {
+    display: flex;
+}
+
+.bellowThanksBanner .itemWrap .left-col {
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.bellowThanksBanner .itemWrap .left-col img {
+    width: 40px;
+}
+
+.bellowThanksBanner .itemWrap .right-col h2 {
+    font-size: 22px;
+}
+
+.bellowThanksBanner .itemWrap .right-col p {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .bellowThanksBanner .itemWrap {
+        flex-direction: column;
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bellowThanksBanner .itemWrap .left-col {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bellowThanksBanner .itemWrap .right-col h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {}
+
+
+/*--------------------------------------------------------------
+#  Privacy Policy and Term & Conditions page
+--------------------------------------------------------------*/
+
+.privacypolicyterms h2 {
+    font-size: 32px;
+}
+
+.privacypolicyterms h3 {
+    font-size: 24px;
+}
+
+.privacypolicyterms h4 {
+    font-size: 22px;
+}
+
+.privacypolicyterms p {
+    font-size: 18px;
+}
+
+.privacypolicyterms p a {
+    color: #1577da;
+}
+
+.privacypolicyterms li {
+    font-size: 18px;
+}
+
+.privacypolicyterms .highlight {
+    font-weight: 500;
+}
+
+.privacypolicyterms p,
+.privacypolicyterms li,
+.privacypolicyterms h2,
+.privacypolicyterms h3,
+.privacypolicyterms h4 {
+    font-weight: 500;
+}
+
+.termcond_privacypilocy {
+    padding-top: 80px;
+}
+
+.termcond_privacypilocy .section-title {
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 991.99px) {
+    .termcond_privacypilocy {
+        padding-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .privacypolicyterms h2 {
+        font-size: 28px;
+    }
+    .privacypolicyterms h3 {
+        font-size: 22px;
+    }
+    .privacypolicyterms h4 {
+        font-size: 20px;
+    }
+    .privacypolicyterms p,
+    .privacypolicyterms li {
+        font-size: 16px;
+    }
+}

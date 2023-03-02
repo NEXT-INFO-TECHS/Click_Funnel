@@ -1,0 +1,1184 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: Business Consultant Application
+Author: OG Web Solutions
+Version: 1.1
+-------------------------------------------------------------------------------------/
+/**
+@File: Business Consultant Application Theme Styles
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+# General Style
+    ## container
+    ## Back To Top
+	## Preloader Spinner
+# Header
+# Footer
+# Home Page
+	## Home banner section
+	## Think Consultant section
+	## Background consultant
+	## Business consultant section
+	## grow section
+	## Testimonials section
+	## Question-section
+	## Ready section
+	## Pop up section
+# Order Page 
+# OTO Page 
+# Thank you page
+# Privacy Policy & Term and Conditions page
+**/
+
+/* ================================================== */
+/* # General Style */
+/* ================================================== */
+
+
+/* -----Google font----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&amp;display=swap');
+
+
+/*----- General style -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    /* color: #ffffff; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 54px;
+}
+
+h4 {
+    font-size: 27px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    text-decoration: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* -----Button----- */
+.button-sec a, button {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgb(253, 192, 84);
+    font-size: 27px;
+    line-height: 20px;
+    font-weight: 700;
+    background: linear-gradient(180deg, rgba(224, 74, 15, 1) 0%, rgba(242, 134, 38, 1) 100%) !important;
+    padding: 23px 18px 16px 20px;
+    display: block;
+    border-bottom: 5px solid #e6944c;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button-sec .title {
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.button-sec .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+.all-heading h1{
+    font-size: 70px;
+    font-weight: 800;
+
+}
+/* -----container--------------*/
+
+.container {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* -------- Back To Top ----------*/
+.backtotop{
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #02aee8;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+	border-radius: 10px;
+	opacity: 0.9;
+	transition: opacity 200ms linear;
+	display: none;
+}
+
+.backtotop::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -7px;
+	margin-top: -4px;
+	transform: rotate(-45deg);
+	height: 0px;
+	width: 0px;
+	border-width: 3px 3px 0 0;
+	border-style: solid;
+	padding: 5px;
+	border-color: #02aee8;
+}
+
+.backtotop:hover{
+	opacity: 1;
+	transition: opacity 200ms linear;
+}
+
+/* --------- Preload Spinner--------- */
+.preloadSpinner{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	z-index: 99999;
+}
+
+ .preloadSpinner::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	width: 100px;
+	height: 100px;
+	background-color: #f5f7fa;
+	border: 1px solid #3c3c3c;
+	border-top: 10px dotted #02aee8;
+	border-radius: 100%;    
+	animation: spinner 500ms infinite ease-in-out;
+} 
+
+
+@keyframes spinner{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width:767.98px) {
+	.preloadSpinner::after{
+		width: 50px;
+		height: 50px;
+		margin-top: -25px;
+		margin-left: -25px;
+		border-top: 5px dotted #ff2600;
+	}
+}
+
+/* ---------header------------ */
+
+.header {
+    padding: 10px 0 10px 0;
+    background: #10384f;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header img {
+    width: 150px;
+}
+
+.mail-sec {
+    color: #ffffff;
+    font-size: 18px;
+
+    text-align: right;
+    padding: 6px 15px 6px 0;
+    display: inline-block;
+}
+
+.mail-sec img {
+    max-width: 20px;
+}
+
+.mail-sec a {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.mail-sec a:hover {
+    text-decoration: underline;
+}
+
+.mail-sec .far {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/*----- Header section ends---- */
+
+/* ----Footer section start -----*/
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 47, 72);
+}
+
+.footer-logo {
+    margin-top: 15px;
+}
+.footer img{
+    max-width: 200px;
+}
+.footer p {
+    margin-top: 13px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer ul {
+    display: inline-flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer ul li {
+    text-align: center;
+    padding-left: 10px;
+    padding: 0 10px;
+}
+
+.footer li:nth-child(1), .footer li:nth-child(2), .footer li:nth-child(3) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---- Footer section ends here ---*/
+
+/* --------------------------
+    Home page start hare
+--------------------------- */
+
+/*-----  Banner section start here ----*/
+
+.home-banner {
+    padding-top: 55px;
+    padding-bottom: 0px;
+    background-image: url(../images/home-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: rgb(86, 236, 221);
+    border-bottom: 5px solid #56ecde;
+}
+
+.home-banner h1 {
+    margin-top: 45px;
+    font-size: 105px;
+    margin-bottom: 12px;
+    padding: 16px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color:#ffffff;
+}
+
+.heading-color {
+    color: #41fec6;
+}
+
+.home-banner-left {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home-banner-left h2 {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 53px;
+    color:#ffffff;
+}
+
+video {
+    padding-top: 22px;
+}
+
+.home-banner-left h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.home-banner-left .button-sec {
+    margin-top: 35px;
+    position: relative;
+}
+
+.home-banner-left .button-sec a:hover {
+    box-shadow: inset 0 2px 2px 0 rgb(255 255 255 / 22%), 0 233px 233px 0 rgb(255 255 255 / 12%) inset;
+}
+
+.arrow ::after {
+    content: url(../images/right-arrow.png);
+    position: absolute;
+    top: -21px;
+    left: -83px;
+}
+
+.arrow ::before {
+    content: url(../images/left-arrow.png);
+    position: absolute;
+    top: -25px;
+    right: -83px;
+}
+
+.home-banner-right {
+    position: relative;
+}
+
+.home-banner-right img {
+    position: absolute;
+    padding: 0 15px;
+    bottom: 0px;
+    left: 0;
+}
+
+/*----- Home banner section ends here -----*/
+
+/*----- Think Consultant section start here ----*/
+
+.think-cons {
+    padding: 70px 0 80px 0;
+    color: #2a2a2a;
+}
+
+.think-cons h2 {
+    font-size: 69px;
+    line-height: 1.0;
+}
+
+.think-cons p {
+    margin-top: 20px;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.think-cons ul li {
+    font-size: 21px;
+    padding-top: 15px;
+    padding-left: 50px;
+    background: url(../images/small-icon.png);
+    background-repeat: no-repeat;
+    background-position: 5px 18px;
+}
+
+/*----- Think Consultant section ends here ----*/
+
+/*---- Background consultant start here  ----*/
+
+.bg-consult {
+    background-color: #e6f9ff;
+    color: #2a2a2a;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-consult h2 {
+    font-size: 73px;
+    line-height: 64px;
+}
+
+.bg-consult p {
+    font-weight: 600;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.bg-consult .button-sec p {
+    padding: 0;
+    font-size: 16px;
+}
+
+.bg-consult img {
+    padding-top: 20px;
+}
+
+.mid-border {
+    border-color: rgb(1, 173, 231);
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+
+.consult-exp {
+    padding-top: 10px;
+}
+
+.consult-exp ul li {
+    font-size: 21px;
+    font-weight: 600;
+    text-align: start;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 50px;
+    background: url(../images/small-icon.png);
+    background-repeat: no-repeat;
+    background-position: 5px 18px;
+}
+
+.consult-exp .heading-color {
+    color: #02aee8;
+}
+
+.bg-consult .button-sec a, button {
+    font-size: 27px;
+}
+
+.bg-consult .button-sec {
+    margin-top: 30px;
+    padding: 0;
+}
+
+/*---- Background consultant ends here  ----*/
+
+/*----- Business consultant section start here  ----*/
+
+.business-consult {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #3c3c3c;
+}
+
+.business-consult h2 {
+    font-size: 77px;
+    line-height: 68px;
+}
+
+.business-consult p {
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.business-consult .heading-color {
+    color: #02aee8;
+}
+
+/*----Business consultant section start here ------*/
+
+/*---- grow section start here  -----*/
+
+.grow-section {
+    background: url(../images/grow-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 85px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.grow-section h2 {
+    font-size: 77px;
+    line-height: 70px;
+    color: #ffffff;
+}
+
+.grow-section h3 {
+    padding-top: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.grow-section .button-sec {
+    margin-top: 24px;
+}
+
+/*----- Grow section ends here -----*/
+
+/*----- Achievers section start here -----*/
+
+.achievers {
+    color: #3c3c3c;
+    padding: 65px 0 65px 0;
+}
+
+.achievers h2 {
+    font-size: 77px;
+    line-height: 65px;
+}
+
+.achievers h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.achievers h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.achievers p {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 700;
+    padding-top: 0;
+}
+
+.achievers h3 img {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.ach-name b {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.achievers .mid-border {
+    margin-top: 17px;
+}
+.achievers-space ul li{
+    padding-bottom:20px;
+}
+
+/*----- Achievers section Ends here -----*/
+
+/*----- Question-section start here -----*/
+
+.question-section {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background-color: #d6f5ff;
+}
+
+.q-heading {
+    background: url(../images/ask-bg.png);
+    padding: 15px 0 15px 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.q-heading h2 {
+    font-size: 53px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.faq i {
+    color: #02aee8;
+}
+
+.faq b {
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 15px;
+    color: #2a2a2a;
+}
+
+.faq p {
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 25px;
+    color: #3d4143;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/*----- Question section ends here -----*/
+
+/*----- Ready section start here -----*/
+
+.ready {
+    background: url(../images/ready-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 85px 0 100px 0;
+}
+
+.ready h2 {
+    color: #ffffff;
+    font-size: 89px;
+    font-weight: 800;
+}
+
+.ready h3 {
+    color: #ffffff;
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.ready .button-sec {
+    margin-top: 0;
+}
+
+/*---- ready section ends here ----*/
+/*------ Pop up section -----*/
+
+.pop-up {
+    padding: 45px 45px;
+}
+
+.pop-up h2 {
+    color: rgb(60, 60, 60);
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.pop-up .button-sec {
+    padding-top: 20px;
+}
+.progress{
+    height: 25px;
+
+}
+.progress-bar{
+    font-family: 'Nunito';
+    color: #201d1d;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 7px;
+    text-align: center;
+    background-color:#dbdbdb;
+}
+.progress-bar-striped{
+    background-image: linear-gradient( 45deg
+,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.pop-up h3 {
+    text-align: center;
+    color: rgb(2, 174, 232);
+    font-size: 21px;
+}
+
+.model-content-footer {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(158, 157, 157);
+    font-size: 14px;
+}
+
+.close a {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 35px;
+    height: 35px;
+    font-size: 23px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #000000;
+    opacity: 1 !important;
+}
+
+.model-content {
+    margin-top: 12px;
+    color: #333;
+}
+
+.pop-up p {
+    text-align: center;
+}
+/*----- Pop up section ends here----*/
+/* --------------------------
+    Home page ends hare
+--------------------------- */
+
+
+/* --------------------------
+    order page start hare
+--------------------------- */
+
+/*----- banner page start here -----*/
+
+.top-banner {
+    background: url(../images/order-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 125px 0 125px 0;
+    margin-top: 55px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.top-banner h3 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #40ebc0;
+}
+
+/*----- banner page ends here -----*/
+
+/*----- form-receive section start here -----*/
+.form-receive {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+input, select {
+    height: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    outline: none;
+}
+
+.form-control {
+    background-color: #fbfbfb;
+    height: 48px;
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color: red;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-info p {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(179, 179, 179);
+    margin-top: 40px;
+}
+
+.form-section {
+    padding: 0px 36px 60px 36px;
+    box-shadow: 0px 0px 6px #c1c1c1;
+}
+
+.form-section h3 {
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 18px;
+    color: rgb(44, 44, 44);
+    font-size: 22px;
+    border-bottom: 1px dotted #b6b6b6;
+}
+.form-section .button-sec .title {
+    font-size: 22px;
+}
+.form-section .button-sec .subtitle {
+    font-size: 16px;
+}
+
+label {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.after-lebel {
+    margin-top: 10px;
+}
+
+.form-section select {
+    color: #737373;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/drop-icon.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    background-size: 14px !important;
+}
+
+.pro-head {
+    padding-top: 25px;
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    justify-content: space-between;
+}
+
+.pro-head h4 {
+    color: #3c3c3c;
+    padding: 0px 0 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list {
+    color: #878787;
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list p {
+    font-size: 18px;
+}
+
+.form-section button {
+    font-size: 18px;
+}
+
+.form-section .button-sec h4 {
+    font-size: 22px;
+}
+
+.form-section .button-sec p {
+    font-size: 16px;
+}
+
+.no-thanks {
+    text-align: center;
+}
+
+.no-thanks p, .no-thanks p a {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+.no-thanks img {
+    max-width: 250px;
+}
+
+.payment-card {
+    max-width: 210px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.receive-section {
+    padding: 0px 33px;
+}
+
+.receive-section .heading-color {
+    color: #02aee8;
+}
+
+.receive-section h2 {
+    font-size: 55px;
+    color: #3c3c3c;
+    font-weight: 800;
+    text-align: center;
+}
+
+.receive-section p {
+    color: #3c3c3c;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.stack-item ul {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.stack-item ul li {
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: #2c2c2c;
+}
+
+.receive-section .achievers {
+    padding: 0px;
+}
+
+.receive-section .achievers h3 {
+    padding-top: 39px;
+    font-size: 20px;
+}
+
+.receive-section .achievers p {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.achievers ul li img{
+    border-radius: 50%;
+}
+
+/*----- Form-receive section ends here -----*/
+
+/* -------------------------
+    Order Page ends here
+---------------------------- */
+
+/*--------------------------
+    OTO Page Start Here
+ ------------------------- */
+
+.again-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.again-price {
+    text-align: center;
+}
+
+.again-price h3 {
+    color: #2c2c2c;
+    font-size: 50px;
+}
+
+.again-price h2 {
+    padding-bottom: 20px;
+    color: #ff2600;
+    font-size: 75px;
+}
+
+.again-price p u b {
+    color: #919191;
+    font-weight: 500;
+}
+
+.again-price .button-sec a, button {
+    font-size: 26px;
+}
+
+.again-section .button-sec {
+    padding: 0;
+}
+
+.again-section .receive-section h2 {
+    font-size: 50px;
+    padding: 0;
+}
+
+.again-section p u b {
+    color: #787878;
+    font-weight: 600;
+}
+
+.again-section .receive-section p {
+    margin-top: 10px;
+}
+
+.again-achievers .achievers {
+    background: #d6f5ff;
+}
+
+.again-achievers .achievers h3 {
+    font-size: 28px;
+}
+
+.again-question .question-section {
+    background-color: #ffffff;
+}
+
+/*-------------------------
+ OTO Page ends here
+ ------------------------ */
+
+/*-------------------------
+ Thank you page start here
+ ------------------------ */
+
+.thanks p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.thank-you {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #2c2c2c;
+}
+
+.product-list {
+    padding: 10px 20px;
+    box-shadow: 0px 0px 8px #c1c1c1;
+}
+
+.product-head {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+    text-align: center;
+    background-color: #02aee8;
+    color: #ffffff;
+}
+
+
+
+.steps{
+    padding-top: 48px;
+}
+.steps p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.steps h3{
+    padding-top:15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.steps figure{
+    padding-top: 20px;
+    text-align: center;
+}
+.thank-you ul li {
+    list-style: inside;
+    font-size: 20px;
+}
+.thank-you ul{
+    padding-bottom: 18px;
+}
+
+.thank-you ::marker {
+    color: #939393;
+}
+
+/*-------------------------
+Thank you page ends here
+ ------------------------ */
+
+/*-----------------------------------------------
+# Privacy Policy & Term and Conditions page
+-------------------------------------------------*/
+
+.privacypolicyterms{
+    padding: 60px 0;
+}
+
+.privacypolicyterms h2 {
+	font-size: 32px;
+}
+.privacypolicyterms h3 {
+	font-size: 24px;
+}
+.privacypolicyterms h4 {
+	font-size: 22px;
+}
+.privacypolicyterms p {
+	font-size: 18px;
+}
+.privacypolicyterms p a {
+	color: #1577da;
+}
+.privacypolicyterms ul {
+}
+.privacypolicyterms li {
+	font-size: 18px;
+}
+.privacypolicyterms .highlight{font-weight: 500;}
+
+@media only screen and (max-width: 767px) {
+	.privacypolicyterms h2 {
+		font-size: 28px;
+	}
+	.privacypolicyterms h3 {
+		font-size: 22px;
+	}
+	.privacypolicyterms h4 {
+		font-size: 20px;
+	}
+	.privacypolicyterms p, .privacypolicyterms li {
+		font-size: 16px;
+	}
+}
